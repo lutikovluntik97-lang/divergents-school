@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divergents Leadership School</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#030712;
+  --card:#0f172a;
+  --accent:#60a5fa;
+  --cta:#f43f5e;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Inter',system-ui,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:24px;
+}
+
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 0;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:700;
+  color:var(--accent);
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:600;
+  color:var(--text);
+  opacity:.8;
+}
+
+nav a:hover{
+  opacity:1;
+  color:var(--accent);
+}
+
+.hero{
+  background:linear-gradient(135deg,#0f172a,#020617);
+  border-radius:var(--radius);
+  padding:48px;
+  margin:30px 0;
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.hero h1{
+  margin:0 0 16px;
+  font-size:36px;
+  color:var(--accent);
+}
+
+.hero p{
+  max-width:720px;
+  font-size:16px;
+  color:var(--muted);
+}
+
+.cta{
+  display:inline-block;
+  margin-top:24px;
+  padding:14px 26px;
+  background:var(--cta);
+  color:white;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.2s;
+}
+
+.cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(244,63,94,.4);
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;
+  margin:60px 0;
+}
+
+.feature{
+  background:var(--card);
+  padding:26px;
+  border-radius:var(--radius);
+  border:1px solid rgba(255,255,255,.05);
+}
+
+.feature h3{
+  margin:0 0 10px;
+  color:var(--accent);
+}
+
+.feature p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+
+.about{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:36px;
+  margin:60px 0;
+  border:1px solid rgba(255,255,255,.05);
+}
+
+.about h2{
+  margin-top:0;
+  color:var(--accent);
+}
+
+.about p{
+  max-width:900px;
+  color:var(--muted);
+}
+
+
+footer{
+  margin:80px 0 40px;
+  padding-top:30px;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:var(--muted);
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">Divergents Leadership School</div>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="courses.html">Курсы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Школа лидерства нового поколения</h1>
+  <p>
+    Divergents Leadership School — современное пространство развития
+    лидерства, мышления и управленческих навыков для детей и подростков.
+  </p>
+  <a href="courses.html" class="cta">Смотреть курсы</a>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>Лидерство</h3>
+    <p>Формируем уверенность, ответственность и инициативность мы учим детей лидерству и еще что бы они читали книги.</p>
+  </div>
+  <div class="feature">
+    <h3>Мышление</h3>
+    <p>Развиваем стратегическое и критическое мышление.</p>
+  </div>
+  <div class="feature">
+    <h3>Практика</h3>
+    <p>Реальные кейсы, проекты и жизненные задачи.</p>
+  </div>
+  <div class="feature">
+    <h3>Наставники</h3>
+    <p>Опытные менторы и тьюторы.</p>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Почему Divergents?</h2>
+  <p>
+    Мы не просто обучаем — мы формируем личность.
+    Наши программы основаны на психологии, коучинге,
+    менеджменте и современных методиках развития.
+  </p>
+</section>
+
+<footer id="contacts">
+  <strong>Divergents Leadership School</strong><br>
+  г. Усть-Каменогорск · +7 (778) 028-14-53<br>
+  © 2025 · Сайт создан учеником школы — <b>Али Байрамов</b>
+</footer>
+
+</div>
+</body>
+</html>
